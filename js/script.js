@@ -66,29 +66,69 @@ $(function () {
 
 
   //use count to plugin in section statistics 
-  $('.statistics .stats .firstP').countTo({
-    from: 0,
-    to: 9780,
-    speed: 3000
-  });
+  // $('.statistics .stats .firstP').countTo({
+  //   from: 0,
+  //   to: 9780,
+  //   speed: 3000
+  // });
 
-  $('.statistics .stats .secondP').countTo({
-    from: 0,
-    to: 30810,
-    speed: 4000
-  });
+  // $('.statistics .stats .secondP').countTo({
+  //   from: 0,
+  //   to: 30810,
+  //   speed: 4000
+  // });
   
-  $('.statistics .stats .thirdP').countTo({
-    from: 0,
-    to: 5320,
-    speed: 2000
+  // $('.statistics .stats .thirdP').countTo({
+  //   from: 0,
+  //   to: 5320,
+  //   speed: 2000
+  // });
+
+  // $('.statistics .stats .fourthP').countTo({
+  //   from: 0,
+  //   to: 98570,
+  //   speed: 5000
+  // });
+
+
+
+  $(window).scroll(function(){
+       
+    //count to
+    if($(window).scrollTop() >= $('.statistics ').offset().top - 100) {
+
+      $('.statistics .stats .firstP').countTo({
+        from: 0,
+        to: 9780,
+        speed: 3000
+      });
+    
+      $('.statistics .stats .secondP').countTo({
+        from: 0,
+        to: 30810,
+        speed: 4000
+      });
+      
+      $('.statistics .stats .thirdP').countTo({
+        from: 0,
+        to: 5320,
+        speed: 2000
+      });
+    
+      $('.statistics .stats .fourthP').countTo({
+        from: 0,
+        to: 98570,
+        speed: 5000
+      });
+
+    }
+
   });
 
-  $('.statistics .stats .fourthP').countTo({
-    from: 0,
-    to: 98570,
-    speed: 5000
-  });
+
+
+
+
 
 });
 
