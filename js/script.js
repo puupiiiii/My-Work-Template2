@@ -41,60 +41,8 @@ $(function () {
         }else{
           scrollButton.hide();
         }
-      });
 
-      /* the same code of if
-      $(window).scroll(function(){
-        $(this).scrollTop()>=700?scrollButton.show() : scrollButton.hide();
-        });
-      */
-
-      //click on button to scroll up 
-      scrollButton.click(function(){
-      $("html,body").animate({scrollTop:0},600);
-      });
-
-
-      // fit text fot h1 , h2 & h3 in about page and faq page
-      $(".about-first-header").fitText(1.2, { minFontSize: '30px', maxFontSize: '62px' });
-
-      $(".about-second-header").fitText(1.2, { minFontSize: '20px', maxFontSize: '24px' });
-
-      $(".about-third-header").fitText(1.2, { minFontSize: '25px', maxFontSize: '40px' });
-
-      $(".faq-first-header").fitText(1.2, { minFontSize: '30px', maxFontSize: '62px' });
-
-
-  //use count to plugin in section statistics 
-  // $('.statistics .stats .firstP').countTo({
-  //   from: 0,
-  //   to: 9780,
-  //   speed: 3000
-  // });
-
-  // $('.statistics .stats .secondP').countTo({
-  //   from: 0,
-  //   to: 30810,
-  //   speed: 4000
-  // });
-  
-  // $('.statistics .stats .thirdP').countTo({
-  //   from: 0,
-  //   to: 5320,
-  //   speed: 2000
-  // });
-
-  // $('.statistics .stats .fourthP').countTo({
-  //   from: 0,
-  //   to: 98570,
-  //   speed: 5000
-  // });
-
-
-
-  $(window).scroll(function(){
-       
-    //count to
+    //use count to plugin in section statistics 
     if($(window).scrollTop() >= $('.statistics ').offset().top - 100) {
 
       $('.statistics .stats .firstP').countTo({
@@ -123,9 +71,29 @@ $(function () {
 
     }
 
-  });
+
+      });
+
+      /* the same code of if
+      $(window).scroll(function(){
+        $(this).scrollTop()>=700?scrollButton.show() : scrollButton.hide();
+        });
+      */
+
+      //click on button to scroll up 
+      scrollButton.click(function(){
+      $("html,body").animate({scrollTop:0},600);
+      });
 
 
+      // fit text fot h1 , h2 & h3 in about page and faq page
+      $(".about-first-header").fitText(1.2, { minFontSize: '30px', maxFontSize: '62px' });
+
+      $(".about-second-header").fitText(1.2, { minFontSize: '20px', maxFontSize: '24px' });
+
+      $(".about-third-header").fitText(1.2, { minFontSize: '25px', maxFontSize: '40px' });
+
+      $(".faq-first-header").fitText(1.2, { minFontSize: '30px', maxFontSize: '62px' });
 
 
 
